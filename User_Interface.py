@@ -247,7 +247,7 @@ root.geometry("1200x750")
 notebook = ttk.Notebook(root)
 notebook.pack(fill="both", expand=True)
 
-
+#PAGE 1
 page1 = ttk.Frame(notebook)
 notebook.add(page1, text="Restaurant")
 
@@ -296,7 +296,7 @@ for c in tree1["columns"]:
 tree1.pack(fill="both",expand=True)
 
 
-
+#PAGE 2
 page2 = ttk.Frame(notebook)
 notebook.add(page2,text="Delivery")
 
@@ -363,7 +363,7 @@ for c in tree2["columns"]:
 
 tree2.pack(fill="both",expand=True)
 
-
+#PAGE 3
 page3=ttk.Frame(notebook)
 notebook.add(page3,text="Kitchen")
 
@@ -375,7 +375,7 @@ for c in tree3["columns"]:
 
 tree3.pack(fill="both",expand=True)
 
-
+#PAGE 4
 page4=ttk.Frame(notebook)
 notebook.add(page4,text="Inventory")
 
