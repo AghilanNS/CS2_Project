@@ -28,7 +28,7 @@ def update_items_delivery(event=None):
         if x.category == selected
     ]
 
-
+#RESTRAUNT
 def add_restaurant():
 
     selected_item = item_var.get()
@@ -73,7 +73,7 @@ def clear_restaurant():
     for x in tree1.get_children():
         tree1.delete(x)
 
-
+#DELIVERY PAGE
 def add_delivery():
 
     selected_item = item_var2.get()
@@ -128,7 +128,7 @@ def clear_delivery():
     for x in tree2.get_children():
         tree2.delete(x)
 
-
+#KITCHEN TRACKING
 def load_kitchen():
 
     for item in menu:
@@ -151,6 +151,7 @@ def clear_kitchen():
     for x in tree3.get_children():
         tree3.delete(x)
 
+#INVERNTORY UPDATE
 def deduct_inventory(item_name, quantity):
 
     for recipe in recipes:
@@ -196,6 +197,7 @@ def clear_inventory():
     for x in tree4.get_children():
         tree4.delete(x)
 
+#DELIVERY CONFIRMATION
 def mark_delivered():
 
     selected = tree2.selection()
