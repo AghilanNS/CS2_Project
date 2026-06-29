@@ -479,9 +479,7 @@ tk.Button(
 
 tree1 = ttk.Treeview(
     page1,
-    columns=("Table","Waiter","Item","Qty","Persons","Price"),
-    show="headings"
-)
+    columns=("Table","Waiter","Item","Qty","Persons","Price"),show="headings")
 
 for c in tree1["columns"]:
     tree1.heading(c,text=c)
